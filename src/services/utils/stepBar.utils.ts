@@ -1,7 +1,7 @@
 const errorMessage = 'Ошибка наименования пути';
 
 const countsByPath = {
-	'': 1,
+	zhdTickets: 1,
 	directions: 1,
 	seats: 1,
 	passengers: 2,
@@ -12,6 +12,7 @@ const countsByPath = {
 export default function getActiveBarsCount(pathname: string): number {
 	const path = pathname.slice(1).match(/^([a-z]+)/);
 
+	console.log(path);
 	if (!path) {
 		throw new Error(errorMessage);
 	}
