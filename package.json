@@ -2,6 +2,7 @@
 	"name": "front",
 	"private": true,
 	"version": "0.0.0",
+	"homepage": "https://Nikoivan.github.io/Zhd-app/",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
