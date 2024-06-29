@@ -43,19 +43,19 @@ jobs:
      run: npm run lint
    - name: Setup Pages
      uses: actions/configure-pages@v3
-      with:
-           deploy_key: ${{ secrets.PRIVATE_KEY }}
-           external_repository: <NikoIvan/NikoIvan.github.io>
-           publish_dir: ./public
+     with:
+      deploy_key: ${{ secrets.PRIVATE_KEY }}
+      external_repository: <NikoIvan/NikoIvan.github.io>
+      publish_dir: ./public
    - name: Upload artifact
      uses: actions/upload-pages-artifact@v1
-      with:
-        # Upload dist repository
-        path: './dist'
+     with:
+      # Upload dist repository
+      path: './dist'
    - name: Deploy to GitHub Pages
      id: deployment
      uses: actions/deploy-pages@v1
-      with:
-           deploy_key: ${{ secrets.PRIVATE_KEY }}
-           external_repository: <NikoIvan/NikoIvan/NikoIvan/NikoIvan.github.io>
-           publish_dir: ./public
+     with:
+      deploy_key: ${{ secrets.PRIVATE_KEY }}
+      external_repository: <NikoIvan/NikoIvan/NikoIvan/NikoIvan.github.io>
+      publish_dir: ./public
