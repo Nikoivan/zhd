@@ -1,7 +1,7 @@
 const errorMessage = 'Ошибка наименования пути';
 
 const countsByPath = {
-	zhdTickets: 1,
+	zhd: 1,
 	directions: 1,
 	seats: 1,
 	passengers: 2,
@@ -10,25 +10,27 @@ const countsByPath = {
 };
 
 export default function getActiveBarsCount(pathname: string): number {
-	const path = pathname.slice(1).match(/^([a-z]+)/);
+	let value = 1;
 
-	console.log(path);
-	if (!path) {
+	if (!pathname.includes('zhd')) {
 		throw new Error(errorMessage);
 	}
 
-	const value = path[1];
-
-	if (
-		value !== '' &&
-		value !== 'passengers' &&
-		value !== 'payment' &&
-		value !== 'confirm' &&
-		value !== 'directions' &&
-		value !== 'seats'
-	) {
-		throw new Error(errorMessage);
+	if (pathname.includes('directions') || pathname.includes('seats')) {
+		return value;
 	}
 
-	return countsByPath[value];
+	if (pathname.includes('passengers')) {
+		value = 2;
+	}
+
+	if (pathname.includes('payment')) {
+		value = 3;
+	}
+
+	if (pathname.includes('confirm')) {
+		value = 4;
+	}
+
+	return value;
 }

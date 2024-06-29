@@ -11,7 +11,7 @@ import Success from '../Pages/Succeess';
 
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: '/zhd',
 		element: <Layout />,
 		children: [
 			{ index: true, element: <Index /> },
