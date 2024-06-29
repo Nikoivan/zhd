@@ -1,0 +1,69 @@
+:root {
+	font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+:root {
+	--white: #ffffff;
+	--bg-main-light: #f7f5f9;
+	--bg-main-middle: #f7f6f6;
+	--bg-main-hard: #f3f3f3;
+	--bg-header-gray: #f9f9f9;
+	--yellow: #ffa800;
+	--md-dark: #3e3c41;
+	--light-dark: #928f94;
+	--brown: #292929;
+	--noir: #2d2b2f;
+	--bg-widgets: #3e3c41;
+	--light-gray: #e5e5e5;
+	--md-gray: #e4e0e9;
+	--dark-gray: #c4c4c4;
+	--red: #bf0000;
+
+	--s: 14px;
+	--m: 18px;
+	--l: 24px;
+	--xl: 30px;
+	--xxl: 36px;
+}
+
+body {
+	background-color: #f7f5f9;
+
+	.List {
+		list-style-type: none;
+	}
+
+	.H2 {
+		font-size: var(--xl);
+	}
+
+	.H3 {
+		font-size: var(--l);
+	}
+
+	.H4 {
+		font-size: var(--m);
+	}
+
+	.Bold {
+		font-weight: 700;
+	}
+}
+
+.Aside {
+	flex-basis: 25%;
+}
+
+.Main {
+	flex-basis: 68.5%;
+}

@@ -1,0 +1,164 @@
+body .TicketsWidget {
+	background-color: var(--bg-widgets);
+	padding-bottom: 0px;
+
+	&-Item {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		gap: 10px;
+		padding: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid var(--light-gray);
+
+		&_type_last {
+			border-bottom: none;
+		}
+
+		&_type_options {
+			padding: 2px 20px 18px 70px;
+		}
+
+		&_type_direction {
+			padding-top: 24px;
+		}
+
+		&_type_direction:last-child {
+			padding-bottom: 49px;
+		}
+	}
+
+	&-List {
+		list-style-type: none;
+		width: 100%;
+	}
+
+	&-ListItem {
+		display: flex;
+
+		align-items: center;
+		gap: 12%;
+		color: #fff;
+		margin-top: 18px;
+	}
+
+	&-Switch {
+		width: 97px;
+		margin-left: auto;
+
+		& .MuiButtonBase-root {
+			color: var(--yellow);
+		}
+
+		& .Mui-checked {
+			transform: translatex(49px);
+		}
+
+		& .MuiSwitch-track {
+			background-color: #fff;
+			opacity: 1;
+		}
+		& .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+			background-color: #fff;
+		}
+
+		& .MuiSwitch-thumb {
+			width: 30px;
+			height: 30px;
+			transform: translateY(-5px);
+		}
+	}
+
+	& .MuiSlider-thumb {
+		color: var(--white);
+	}
+
+	& .MuiSlider-track {
+		color: var(--yellow);
+	}
+
+	& .MuiSlider-markLabel {
+		margin-top: 10px;
+		transform: translateX(-30px);
+		color: var(--white);
+		font-size: 15px;
+	}
+
+	& .MuiSlider-valueLabel {
+		font-size: 16px;
+		transform: translateY(118%);
+		background-color: #ffffff00;
+	}
+
+	& .MuiSlider-rail {
+		border: 1px solid var(--white);
+	}
+
+	&-Price {
+		& .MuiSlider-root {
+			height: 16px;
+			margin-bottom: 0;
+		}
+
+		& .MuiSlider-root::before,
+		.MuiSlider-root::after {
+			position: absolute;
+			font-size: var(--m);
+			color: var(--white);
+			top: -20px;
+		}
+
+		& .MuiSlider-root::before {
+			content: 'От';
+			top: -16px;
+			left: 0;
+		}
+
+		& .MuiSlider-root::after {
+			content: 'До';
+			top: -16px;
+			right: 0;
+		}
+
+		& .MuiSlider-thumb {
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	&-TimeSet {
+		width: 100%;
+
+		& .MuiSlider-root {
+			margin-top: 5px;
+			height: 8px;
+			margin-bottom: 0;
+		}
+	}
+
+	&-TimeSetContainer {
+		&_arrival {
+			margin-top: 65px;
+			text-align: right;
+		}
+	}
+
+	&-SliderTitle {
+		color: var(--white);
+		font-size: var(--l);
+	}
+
+	&-HeaderWrap {
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 5px;
+	}
+
+	&-DirectionTitle {
+		margin-left: 15px;
+		margin-right: auto;
+	}
+}

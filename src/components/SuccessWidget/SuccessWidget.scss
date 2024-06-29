@@ -1,0 +1,101 @@
+.SuccessWidget {
+	margin: -209px auto 175px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&-Wrap {
+		width: 73%;
+		border: 1px solid var(--dark-gray);
+		background-color: var(--white);
+	}
+
+	&-Header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 55px 77px 45px;
+		border-bottom: 1px solid var(--dark-gray);
+		font-size: var(--xxl);
+	}
+
+	&-OrderInfoTitle {
+		font-size: var(--xxl);
+	}
+
+	&-OrderPriceInfo {
+		color: var(--light-dark);
+	}
+
+	&-Price {
+		margin-left: 15px;
+		font-weight: 700;
+		color: var(--md-dark);
+	}
+
+	&-BoardInfo {
+		background-color: #f4f3f6;
+		padding: 25px 0 37px;
+	}
+
+	&-BoardList {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 100px;
+	}
+
+	&-BoardItem {
+		max-width: 200px;
+		font-size: 160px;
+	}
+
+	&-BoardItemText {
+		padding-left: 32px;
+		margin-top: -35px;
+		font-size: var(--m);
+	}
+
+	&-BoldText {
+		font-weight: 500;
+	}
+
+	&-CustomerInfo {
+		padding: 90px 203px 135px;
+		color: var(--brown);
+		font-size: var(--l);
+	}
+
+	&-CustomerName {
+		font-size: var(--xxl);
+		font-weight: 700;
+	}
+
+	&-CustomerText {
+		margin-top: 35px;
+
+		&_type_bold {
+			margin-top: 87px;
+			font-weight: 700;
+		}
+	}
+
+	&-Footer {
+		padding: 50px 80px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: var(--yellow);
+	}
+
+	&-ActionBtn {
+		padding: 12px 8px 13px;
+		border: 1px solid var(--md-dark);
+		border-radius: 5px;
+		color: var(--brown);
+		font-size: var(--l);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}

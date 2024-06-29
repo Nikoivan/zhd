@@ -1,0 +1,41 @@
+.StepsBar-Item {
+	position: relative;
+	z-index: 2;
+	padding: 25px 5.8% 25px 2%;
+
+	&_first {
+		padding-left: 11.7%;
+		padding-right: 8.2%;
+	}
+
+	&_second {
+		padding-left: 2.2%;
+		padding-right: 2.2%;
+	}
+
+	&_third {
+		padding-left: 1.5%;
+		padding-right: 5%;
+	}
+
+	&_last {
+		padding-left: 1.8%;
+		padding-right: 0;
+		border-right: none;
+		flex-grow: 1;
+	}
+
+	&_type_active {
+		background-color: var(--yellow);
+	}
+}
+
+.StepsBar-Item:first-child {
+	padding-left: 13.1%;
+	padding-right: 9.3%;
+}
+
+.StepsBar-Item:nth-child(3) {
+	padding-left: 2.3%;
+	padding-right: 2.2%;
+}

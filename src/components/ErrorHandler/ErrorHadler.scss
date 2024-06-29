@@ -1,0 +1,11 @@
+body .ErrorHandler {
+	width: 400px;
+	margin-top: 10% auto;
+	font-size: var(--l);
+
+	&-Button {
+		margin: 50px auto;
+		color: var(--noir);
+		background-color: var(--yellow);
+	}
+}

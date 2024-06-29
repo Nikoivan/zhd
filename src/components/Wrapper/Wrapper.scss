@@ -1,0 +1,25 @@
+.Wrapper_type {
+	&_page {
+		background-color: #f7f5f9;
+		padding: 4.9% 13.5%;
+		display: flex;
+		gap: 5%;
+		justify-content: space-between;
+		min-height: 50vh;
+	}
+
+	&_flexCenter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&_flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_relative {
+		position: relative;
+	}
+}

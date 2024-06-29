@@ -1,0 +1,108 @@
+body .PaymentWidget {
+	width: 100%;
+
+	&-Container {
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-ItemHeader {
+		padding: 32px 35px 35px;
+		background-color: var(--bg-header-gray);
+		border-bottom: 1px dotted var(--light-dark);
+	}
+
+	&-Title {
+		font-weight: 400;
+	}
+
+	&-ItemMain {
+		padding: 29px 35px 88px;
+		background-color: var(--white);
+		border-bottom: 1px dotted var(--light-dark);
+
+		&_type_pay {
+			padding: 0;
+		}
+	}
+
+	&-PersonNames {
+		display: flex;
+		gap: 28px;
+	}
+
+	&-PersonName {
+		margin-top: 12px;
+		display: block;
+		& .MuiOutlinedInput-input {
+			padding: 13px 25px;
+			width: 226px;
+		}
+	}
+
+	&-Contacts {
+		margin-top: 53px;
+	}
+
+	&-EmailWrap {
+		margin-top: 37px;
+	}
+
+	&-ContactItem {
+		margin-top: 11px;
+		display: block;
+		width: 360px;
+		height: 50px;
+	}
+
+	&-PayItem {
+		padding: 42px 27px 74px;
+		border-bottom: 1px dotted var(--light-dark);
+
+		&_type_last {
+			padding: 50px 27px 78px;
+			border-bottom: none;
+		}
+	}
+
+	&-PayControl {
+		display: flex;
+		align-items: center;
+	}
+
+	&-FormControl {
+		margin-right: 15px;
+	}
+
+	&-Label {
+		color: var(--light-dark);
+		font-size: var(--l);
+	}
+
+	&-PayList {
+		margin-top: 22px;
+		padding-left: 7px;
+		display: flex;
+		column-gap: 5px;
+	}
+
+	&-PayListItem {
+		width: 225px;
+		font-size: var(--l);
+		font-weight: 700;
+		color: var(--brown);
+		text-align: left;
+		vertical-align: baseline;
+		line-height: 1.2;
+	}
+
+	&-Actions {
+		margin-top: 113px;
+		text-align: right;
+	}
+
+	&-ActionBtn {
+		padding: 8px 58px;
+		background-color: var(--yellow);
+		text-transform: uppercase;
+	}
+}

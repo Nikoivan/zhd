@@ -1,0 +1,128 @@
+body .ConfirmWidget {
+	&-TrainInfoHead {
+		padding: 23px 29px 31px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-Title {
+		color: var(--brown);
+		font-size: var(--xl);
+		font-weight: 400;
+	}
+
+	&-PassInfo {
+		margin-top: 46px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-PassInfoHead {
+		padding: 26px 29px 31px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-PassInfoContent,
+	&-PayInfoContent {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&-PassInfoList {
+		flex-basis: 70%;
+		padding-top: 55px;
+		padding-bottom: 59px;
+		border-right: 1px dotted var(--light-gray);
+	}
+
+	&-PassInfoItem {
+		display: flex;
+		column-gap: 34px;
+		padding: 25px 40px 41px;
+		border-bottom: 1px dotted var(--light-gray);
+	}
+
+	&-PassInfoItem:first-child {
+		padding-top: 0;
+	}
+	&-PassItemHead {
+		font-size: 70px;
+	}
+
+	&-PassType {
+		margin-top: -3px;
+		display: block;
+		font-size: var(--m);
+	}
+
+	&-PassItemContent {
+		padding-top: 3px;
+	}
+
+	&-FullName {
+		font-weight: 700;
+		font-size: var(--m);
+		color: var(--brown);
+	}
+
+	&-Row {
+		margin-top: 8px;
+		color: var(--light-dark);
+
+		&_type_first {
+			margin-top: 14px;
+		}
+	}
+
+	&-PassInfoPrice {
+		padding-left: 30px;
+		padding-bottom: 26px;
+		font-size: var(--xl);
+	}
+
+	&-TotalPrice {
+		margin-left: 37px;
+		font-weight: 700;
+	}
+
+	&-Btn {
+		border-color: var(--brown);
+		color: var(--brown);
+		width: 225px;
+		height: 39px;
+
+		&_type_passengers {
+			margin-top: 30px;
+		}
+	}
+
+	&-PayInfo {
+		margin-top: 44px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-PayInfoHead {
+		padding: 25px 29px 31px;
+		border-bottom: 1px solid var(--light-dark);
+	}
+
+	&-PayInfoType {
+		flex-basis: 65%;
+		padding: 40px 31px 73px;
+		font-size: var(--l);
+		color: var(--brown);
+		border-right: 1px dotted var(--light-gray);
+	}
+
+	&-PayActions {
+		padding: 20px 10px;
+	}
+
+	&-Actions {
+		text-align: right;
+		margin-top: 122px;
+	}
+
+	&-ActionBtn {
+		text-transform: uppercase;
+		background-color: var(--yellow);
+	}
+}

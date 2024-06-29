@@ -1,0 +1,22 @@
+body .Button {
+	padding: 8px 72px;
+	color: var(--white);
+	border: 1px solid var(--white);
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: none;
+	letter-spacing: 0;
+
+	&_type_withoutAll {
+		padding: 0;
+		margin: 0;
+		border: none;
+		color: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+		min-width: 0;
+		text-transform: none;
+	}
+}

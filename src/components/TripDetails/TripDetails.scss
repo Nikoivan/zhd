@@ -1,0 +1,166 @@
+body .TripDetails {
+	background-color: var(--bg-widgets);
+	color: var(--light-gray);
+
+	&-Header {
+		padding: 31px 35px 37px 40px;
+		border-bottom: 1px solid var(--light-gray);
+	}
+
+	&-Direction {
+		padding: 15px 26px 82px;
+		border-bottom: 1px solid var(--light-gray);
+
+		&_type_arrival {
+			padding-bottom: 63px;
+		}
+	}
+
+	&-Title {
+		font-size: var(--xl);
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	&-DirectionRow {
+		display: flex;
+
+		justify-content: space-between;
+		margin-top: 12px;
+		font-size: var(--m);
+
+		&_arrival {
+			margin-top: 30px;
+		}
+
+		&_type_first {
+			margin-top: 45px;
+		}
+
+		&_arrival {
+			margin-top: 26px;
+		}
+	}
+
+	&-RowTitle {
+		color: var(--light-gray);
+	}
+
+	&-RowValue {
+		display: block;
+		text-align: end;
+		&_type {
+			&_number {
+				font-size: var(--l);
+			}
+			&_multyline {
+				line-height: 1.1;
+			}
+		}
+	}
+	&-TimeInfo {
+		margin-top: 43px;
+		font-size: var(--m);
+		text-align: center;
+	}
+
+	&-DurationTime {
+		letter-spacing: 3px;
+	}
+
+	&-TimeRow {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&_type_dates {
+			margin-top: 3px;
+		}
+	}
+
+	&-TimePoint {
+		font-size: var(--l);
+	}
+
+	&-DatePoint {
+		color: var(--light-dark);
+	}
+
+	&-PlacesInfo {
+		margin-top: 15px;
+		font-size: var(--m);
+	}
+
+	&-Cities {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: var(--m);
+	}
+
+	&-Stations {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 16px;
+		color: var(--light-dark);
+	}
+
+	&-Passengers {
+		padding: 11px 28px 39px;
+		border-bottom: 1px solid var(--light-gray);
+	}
+
+	&-PassengersHead {
+		display: flex;
+		gap: 16px;
+	}
+
+	&-PassengersIcon {
+		padding-top: 10px;
+	}
+
+	&-PassengersTitle {
+		font-size: 30px;
+		margin-right: auto;
+	}
+
+	&-PassengersList {
+		margin-top: 26px;
+	}
+
+	&-PassengersListItem {
+		margin-top: 6px;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+	}
+
+	&-PassengersCount {
+		font-size: var(--m);
+		color: var(--light-gray);
+		margin-right: auto;
+	}
+
+	&-PassengersPrice {
+		padding-top: 5px;
+		font-size: var(--l);
+	}
+
+	&-PriceInfo {
+		padding: 25px 26px 21px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&-PriceTitle {
+		padding-top: 18px;
+		font-size: var(--xl);
+		text-transform: uppercase;
+	}
+
+	&-AmountPrice {
+		color: var(--yellow);
+		font-size: 48px;
+	}
+}

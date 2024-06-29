@@ -1,0 +1,71 @@
+.Contacts {
+	overflow: hidden;
+	animation-name: open;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
+	&-Wrapper {
+		display: flex;
+		padding: 2.3% 0 2.7% 17.7%;
+		gap: 2.7%;
+	}
+
+	&_type_hidden {
+		animation-name: hide;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+	}
+
+	&-Column {
+		min-width: 35%;
+		flex-shrink: 0;
+
+		&_type_full {
+			width: 70%;
+		}
+	}
+
+	&-ColumnTitle {
+		font-size: var(--xl);
+		font-weight: 500;
+	}
+
+	&-ItemContent {
+		font-size: var(--l);
+	}
+
+	&-ItemLine {
+		margin-top: -1.5%;
+	}
+
+	&-MultilineWrap {
+		margin-top: -1.5%;
+		align-items: flex-start;
+	}
+}
+
+@keyframes open {
+	0% {
+		height: 0;
+	}
+	50% {
+		height: 0.5;
+	}
+	100% {
+		height: 1;
+	}
+}
+
+@keyframes hide {
+	from {
+		height: 1;
+	}
+	50% {
+		height: 0.5;
+	}
+	to {
+		height: 0;
+	}
+}

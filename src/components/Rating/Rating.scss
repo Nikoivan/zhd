@@ -1,0 +1,17 @@
+body .Rating {
+	display: flex;
+	align-items: center;
+	column-gap: 29px;
+	color: #292929;
+	font-size: 24px;
+
+	&-List {
+		display: flex;
+		column-gap: 6px;
+		list-style-type: none;
+	}
+
+	&-IconBtn {
+		font-size: 45px;
+	}
+}

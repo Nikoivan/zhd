@@ -1,0 +1,12 @@
+.Contacts-Item {
+	display: flex;
+	align-items: center;
+	margin-top: 4.7%;
+	gap: 6.3%;
+
+	&_type_multiline {
+		align-items: flex-start;
+		margin-top: 6.4%;
+		gap: 8%;
+	}
+}

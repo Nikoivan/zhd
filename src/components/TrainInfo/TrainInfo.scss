@@ -1,0 +1,281 @@
+body .TrainInfo {
+	width: 100%;
+	border: 1px solid var(--dark-gray);
+	border-top: none;
+
+	&-AboutTrain {
+		min-height: 123px;
+		display: flex;
+		align-items: center;
+		gap: 23px;
+		padding-left: 20px;
+		background-color: var(--bg-main-middle);
+	}
+
+	&-Wrap {
+		width: 22%;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		gap: 23px;
+		border-right: 1px solid var(--white);
+		padding: 8px 0 15px 13px;
+
+		&_type_main {
+			width: 47%;
+			gap: 10px;
+		}
+
+		&_type_last {
+			border-right: none;
+		}
+	}
+
+	&-Head {
+		line-height: 1.2;
+	}
+
+	&-ItemWrap {
+		line-height: 1.2;
+
+		&_type_notStretched {
+			margin-right: 45px;
+		}
+	}
+
+	&-Icon {
+		margin-top: 10px;
+		margin-left: -5px;
+		font-size: 30px;
+	}
+
+	&-TrainNumber {
+		white-space: nowrap;
+	}
+
+	&-DirectionTime,
+	&-DirectionCity,
+	&-DirectionRailwayStation {
+		display: block;
+	}
+
+	&-DirectionRailwayStation {
+		color: var(--light-dark);
+	}
+
+	&-DepartureCity,
+	&-ArrivalCity {
+		display: block;
+	}
+
+	&-Times {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-Duration {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+		font-size: 30px;
+		line-height: 1.1;
+	}
+
+	&-DurationItem {
+		display: block;
+	}
+
+	&-Tickets {
+		background-color: var(--white);
+	}
+
+	&-TicketsHeader {
+		padding: 33px 18px 20px;
+	}
+
+	&-TicketsList {
+		display: flex;
+		padding-bottom: 30px;
+		border-bottom: 1px solid var(--dark-gray);
+	}
+
+	&-TicketsItem {
+		box-sizing: border-box;
+		flex-basis: 33%;
+		padding: 20px 47px 23px 35px;
+
+		&_selected {
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+			background-color: var(--bg-main-middle);
+		}
+	}
+
+	&-TicketsItem:hover {
+		border: 1px solid #ffa800c9;
+	}
+
+	&-ItemType {
+		display: block;
+		font-size: var(--m);
+		padding: 12px 5px;
+		border: 1px solid var(--light-dark);
+		border-radius: 5px;
+		background-color: var(--white);
+		white-space: nowrap;
+	}
+
+	&-ItemAnnotation {
+		line-height: 1.2;
+		margin-top: 23px;
+		display: block;
+	}
+
+	&-VanType {
+		padding-bottom: 70px;
+	}
+
+	&-VanTypeTitle {
+		padding: 40px 20px 0;
+	}
+
+	&-VanTypeList {
+		margin-top: 26px;
+		padding: 0 30px;
+		display: flex;
+
+		align-items: center;
+		column-gap: 16.7%;
+	}
+
+	&-VanTypeItem {
+		color: var(--light-dark);
+		text-align: center;
+
+		&_active {
+			color: var(--yellow);
+		}
+	}
+
+	&-TypeIcon {
+		font-size: 52px;
+	}
+
+	&-TypeText {
+		margin-top: 5px;
+		display: block;
+		font-size: var(--l);
+	}
+
+	&-VansInfo {
+		margin-top: 23px;
+	}
+
+	&-VansWrap {
+		display: flex;
+		padding: 0 25px 5px 32px;
+		background-color: #ffa80070;
+	}
+
+	&-VansItemTitle {
+		margin-right: 10px;
+		font-size: var(--m);
+	}
+
+	&-VansNumberList,
+	&-VansNumberItem {
+		display: inline;
+	}
+
+	&-VansNumberItem {
+		margin-right: 5px;
+		font-size: var(--l);
+		font-weight: 700;
+
+		&_selected {
+			color: var(--white);
+		}
+	}
+
+	&-VansAnnotation {
+		padding-top: 8px;
+		margin-left: auto;
+	}
+
+	&-VanPropsList {
+		display: flex;
+		column-gap: 5%;
+	}
+
+	&-VanPropsItem {
+		padding: 20px 38px;
+
+		&_type_count {
+			max-height: 105px;
+			padding-top: 30px;
+			padding-right: 68px;
+			line-height: 1;
+			background-color: #ffa80070;
+		}
+
+		&_type_services {
+			padding: 27px 15px;
+		}
+	}
+
+	&-VanNumber {
+		font-size: 72px;
+		font-weight: 700;
+	}
+
+	&-VanNumberAnnotation {
+		padding-left: 4px;
+		display: block;
+		font-size: var(--l);
+	}
+
+	&-Row:first-child {
+		margin-top: 0;
+	}
+
+	&-Row {
+		margin-top: 15px;
+		font-size: var(--l);
+		white-space: nowrap;
+	}
+
+	&-PropItemType {
+		margin-right: 5px;
+	}
+
+	&-PropItemTitle {
+		margin-right: 13px;
+		color: var(--light-dark);
+		font-size: var(--m);
+	}
+
+	&-PropOther {
+		font-size: var(--m);
+		color: var(--dark-gray);
+	}
+
+	&-IconsList {
+		margin-top: 13px;
+		display: flex;
+		gap: 6.5%;
+	}
+
+	&-SelectionInfo {
+		margin-top: 55px;
+		border-radius: 5px;
+		width: 200px;
+		padding: 11px 15px;
+		line-height: 1.2;
+		background-color: #f3f3f3;
+		color: var(--brown);
+	}
+
+	&-VanWrap {
+		padding: 22px;
+	}
+}

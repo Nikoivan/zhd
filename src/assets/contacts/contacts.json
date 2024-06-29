@@ -1,0 +1,35 @@
+{
+	"contacts": {
+		"contactsList": [
+			{ "title": "tel", "value": "8 (800) 000 00 00", "icon": "./src/assets/contacts/contacts-icons/phone.svg" },
+			{
+				"title": "mailto",
+				"value": "inbox@mail.ru",
+				"icon": "./src/assets/contacts/contacts-icons/email.svg"
+			},
+			{
+				"title": "skype",
+				"value": "tu.train.tickets",
+				"icon": "./src/assets/contacts/contacts-icons/skype.svg",
+				"url": "https://join.skype.com/jBs5RDCdEY1JPp"
+			},
+			{
+				"title": "address",
+				"value": ["г. Москва", "ул. Московская 27-35", "555 555"],
+				"icon": "./src/assets/contacts/contacts-icons/location.svg",
+				"url": "yandexnavi://build_route_on_map?lat_to=59.918423&lon_to=30.347444"
+			}
+		],
+		"socialNetworks": [
+			{
+				"title": "youTube",
+				"value": "https://www.youtube.com/watch?v=7wMwop0YuLc",
+				"icon": "./src/assets/contacts/socials-icons/youtube.svg"
+			},
+			{ "title": "linkedln", "value": "https://vk.com", "icon": "./src/assets/contacts/socials-icons/linkedln.svg" },
+			{ "title": "google", "value": "inbox@gmail.com", "icon": "./src/assets/contacts/socials-icons/google.svg" },
+			{ "title": "faceBook", "value": "https://vk.com", "icon": "./src/assets/contacts/socials-icons/facebook.svg" },
+			{ "title": "twitter", "value": "https://vk.com", "icon": "./src/assets/contacts/socials-icons/twitter.svg" }
+		]
+	}
+}

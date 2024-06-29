@@ -1,0 +1,43 @@
+.Header {
+	background-position: top center;
+	background-image: url('./../../assets/images/bg-header.jpg');
+
+	&_type_main {
+		background-image: url('./../../assets/images/bg-header-main-page.jpg');
+		border-bottom: 8px solid var(--yellow);
+	}
+
+	&_type_success {
+		background-image: url(('./../../assets/images/bg-header-success.jpg'));
+		height: 834px;
+	}
+
+	&-Title {
+		margin-top: 14%;
+		width: 30%;
+		padding: 2.5% 0 0 8%;
+
+		&_type_success {
+			width: 100%;
+			color: var(--white);
+			font-size: 72px;
+			padding: 0;
+		}
+	}
+
+	&-Wrapper {
+		display: flex;
+		justify-content: center;
+
+		&_type_main {
+			margin-top: 8.7%;
+			gap: 11.5%;
+			padding: 0 12%;
+		}
+
+		&_type_success {
+			padding: 7.4% 13.3%;
+			display: block;
+		}
+	}
+}

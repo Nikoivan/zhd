@@ -1,0 +1,14 @@
+.Input {
+	position: relative;
+	height: 60px;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-position: right;
+	outline: none;
+	border-radius: 3px;
+	font-size: 18px;
+
+	&_has_error {
+		border: 3px solid var(--red);
+	}
+}

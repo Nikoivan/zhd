@@ -1,0 +1,63 @@
+.LastDirectionsWidget {
+	margin-top: 25%;
+
+	&-Item {
+		margin-top: 17px;
+		padding: 20px 15px 5px;
+		border: 1px solid var(--dark-gray);
+
+		background-color: #fff;
+	}
+
+	&-ItemWrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		flex-wrap: wrap;
+
+		&_type_withPrice {
+			margin-top: 39px;
+		}
+	}
+
+	&-City,
+	&-Station {
+		display: block;
+	}
+
+	&-City {
+		font-size: 20px;
+		color: #292929;
+	}
+
+	&-Station {
+		color: #928f94;
+	}
+
+	&-ToInfo {
+		text-align: end;
+	}
+
+	&-Title {
+		text-transform: uppercase;
+		font-size: var(--xl);
+		font-weight: 500;
+		color: #000;
+	}
+
+	&-List {
+		list-style-type: none;
+		margin-top: 30px;
+	}
+
+	&-Text {
+		color: var(--light-dark);
+	}
+
+	&-Price {
+		margin: 0 3px 0 3px;
+		font-size: var(--xxl);
+		font-weight: 700;
+		color: var(--yellow);
+	}
+}

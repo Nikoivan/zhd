@@ -1,0 +1,13 @@
+.Development {
+	display: flex;
+	font-size: var(--l);
+	font-weight: 300;
+	padding-left: 12%;
+	gap: 3%;
+
+	&-Year,
+	.Development-Author {
+		font: inherit;
+		letter-spacing: 2.5px;
+	}
+}

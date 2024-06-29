@@ -1,0 +1,71 @@
+.AboutUs {
+	padding: 7.2% 13.3% 6.3%;
+
+	&-Title {
+		font-size: 36px;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&-Content {
+		border-left: 9px solid var(--yellow);
+		padding-left: 1.4%;
+		padding-right: 17%;
+	}
+
+	&-Paragraph {
+		margin-top: 2.4%;
+		font-size: 24px;
+		line-height: 1.2;
+		letter-spacing: 0.4px;
+
+		&_type_bold {
+			font-weight: 700;
+			letter-spacing: -0.4px;
+		}
+	}
+}
+
+.HowItWorks {
+	padding: 3.2% 14.4% 5.7% 13%;
+	background-image: url('/src/assets/images/how-it-works-bg.jpg');
+
+	&-Title {
+		padding-top: 3px;
+		text-transform: uppercase;
+		font-size: var(--xxl);
+		font-weight: 500;
+		color: var(--white);
+	}
+
+	&-List {
+		flex-shrink: 0;
+		margin-top: 7%;
+		padding-left: 0.5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style-type: none;
+		gap: 10%;
+	}
+
+	&-Item {
+		width: 16%;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+	}
+
+	&-ItemTitle {
+		font-size: 24px;
+		color: var(--white);
+		letter-spacing: 0.2px;
+		line-height: 1.2;
+	}
+
+	&-ItemTitleWrap {
+		margin-top: 25px;
+		text-align: center;
+	}
+}

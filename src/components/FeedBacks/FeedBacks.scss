@@ -1,0 +1,67 @@
+.FeedBacks {
+	padding: 7.6% 13% 6.4%;
+
+	&-Title {
+		font-size: var(--xxl);
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	&-List {
+		width: 1428px;
+		margin-top: 71px;
+		display: flex;
+		list-style-type: none;
+		gap: 6%;
+	}
+
+	&-Item {
+		display: flex;
+		gap: 3%;
+		width: 643px;
+	}
+
+	&-ContentWrap {
+		padding: 3.5% 1%;
+	}
+
+	&-AuthorName {
+		font-size: var(--l);
+		font-weight: 500;
+		padding: 0 2.7%;
+	}
+
+	&-ItemContentWrap {
+		display: flex;
+		margin-top: 2%;
+	}
+
+	&-ItemContent {
+		padding-top: 2.8%;
+		padding-left: 1%;
+		font-size: var(--m);
+		letter-spacing: 0;
+		line-height: 1.15;
+		max-width: 90%;
+		display: inline-block;
+		color: #928f94;
+
+		&_type_quotes {
+			margin-top: 2%;
+			font-weight: 500;
+		}
+	}
+
+	&-Slider {
+		overflow: hidden;
+	}
+
+	&-SliderLine {
+		display: flex;
+		transition: all ease 1s;
+	}
+
+	&-ItemImage {
+		height: 205px;
+	}
+}

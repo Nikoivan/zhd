@@ -1,0 +1,32 @@
+.ItemTitle {
+	color: var(--white);
+	font-weight: 400;
+
+	&_size {
+		&_s {
+			font-size: 12px;
+		}
+
+		&_m {
+			font-size: 18px;
+		}
+
+		&_l {
+			font-size: 24px;
+		}
+
+		&_xl {
+			font-size: 30px;
+		}
+
+		&_xxl {
+			font-size: 36px;
+		}
+	}
+
+	&_type {
+		&_bold {
+			font-weight: 700;
+		}
+	}
+}

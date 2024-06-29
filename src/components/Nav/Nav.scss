@@ -1,0 +1,16 @@
+.Nav {
+	&-List {
+		background-color: #2d2b2f;
+		list-style-type: none;
+		display: flex;
+		gap: 6.3%;
+		margin-top: 7px;
+		padding: 23px 13.3% 31px;
+	}
+
+	&-Item {
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 0.9px;
+	}
+}

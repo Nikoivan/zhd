@@ -1,0 +1,40 @@
+body .Subscription {
+	margin-top: 2.3%;
+
+	&-Title {
+		font-size: var(--l);
+		font-weight: 500;
+	}
+
+	&-Input {
+		padding: 8px 25px;
+		width: 40.2%;
+		font-size: var(--l);
+	}
+
+	&-Button {
+		padding: 5px 11.5px;
+		height: 60px;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+
+	&-Form {
+		margin-top: 1.4%;
+		display: flex;
+		align-items: center;
+		column-gap: 3%;
+	}
+
+	&-Popover .MuiPopover-paper {
+		font-size: 20px;
+		padding: 5px 10px;
+	}
+
+	&-PopoverText {
+		&_type_error {
+			text-transform: uppercase;
+			color: var(--red);
+		}
+	}
+}

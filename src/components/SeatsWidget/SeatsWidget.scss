@@ -1,0 +1,82 @@
+body .SeatsWidget {
+	width: 100%;
+	color: var(--brown);
+
+	&-Title {
+		font-weight: 500;
+
+		text-transform: uppercase;
+	}
+
+	&-Empty {
+		text-align: center;
+		font-size: var(--l);
+		margin: 5rem auto;
+	}
+
+	&-Item {
+		margin-top: 15px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-ChoiceTrain {
+		display: flex;
+		margin-top: 6%;
+		padding: 35px 18px;
+		border: 1px solid var(--dark-gray);
+		border-bottom: none;
+		gap: 12px;
+		background-color: var(--white);
+
+		&_reverse {
+			margin-top: 30px;
+			justify-content: flex-end;
+		}
+	}
+
+	&-ReturnIconBtn {
+		padding: 0;
+		font-size: 60px;
+
+		& .MuiSvgIcon-root {
+			width: auto;
+		}
+	}
+
+	&-ReturnBtn {
+		padding: 0 25px;
+		color: var(--brown);
+		font-size: var(--l);
+		border-color: var(--brown);
+	}
+
+	&-TrainInfo {
+		padding: 5px 10px;
+		background-color: var(--bg-main-middle);
+	}
+
+	&-InfoWrap {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&-TrainIcon {
+		color: var(--yellow);
+	}
+
+	&-Actions {
+		margin-top: 100px;
+		text-align: right;
+		min-height: 40px;
+	}
+
+	&-ActionButton {
+		padding: 10px 50px;
+		border-radius: 5px;
+		background-color: var(--yellow);
+		text-transform: uppercase;
+		font-size: var(--l);
+		font-weight: 700;
+	}
+}

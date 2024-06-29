@@ -1,0 +1,15 @@
+.Loading {
+	margin: calc(50% - 30px) calc(50% - 100px);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10%;
+
+	&-Title {
+		text-transform: uppercase;
+		font-size: var(--l);
+		color: var(--light-dark);
+	}
+}

@@ -1,0 +1,18 @@
+.Pagination {
+	margin-top: 8.5%;
+	display: flex;
+	justify-content: center;
+	gap: 0.7%;
+
+	&-Item {
+		content: '';
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: var(--light-gray);
+
+		&_type_active {
+			background-color: var(--dark-gray);
+		}
+	}
+}

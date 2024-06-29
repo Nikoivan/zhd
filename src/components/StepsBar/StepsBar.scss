@@ -1,0 +1,52 @@
+.StepsBar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	letter-spacing: 1px;
+	background-color: var(--bg-widgets);
+
+	&-Count {
+		margin-left: 2%;
+		padding: 2px 15px;
+		border: 3px solid #fff;
+		border-radius: 50%;
+		font-size: var(--xxl);
+	}
+
+	&-Count:first {
+		margin-left: 0;
+	}
+
+	&-ItemTitle {
+		margin-left: 30px;
+		font-size: var(--xl);
+	}
+
+	&-Arrow {
+		z-index: 3;
+		min-width: 71px;
+		min-height: 71px;
+		margin-left: -36px;
+		border-right: 1px solid #fff;
+		border-top: 1px solid #fff;
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: inherit;
+		transform: rotate(45deg);
+
+		&_type_active {
+			background-color: var(--yellow);
+		}
+	}
+
+	&-ActiveBack {
+		position: absolute;
+		height: 98px;
+		width: 35px;
+		top: 0;
+		left: -35px;
+		background-color: var(--yellow);
+	}
+}

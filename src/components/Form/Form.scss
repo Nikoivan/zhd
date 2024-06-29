@@ -1,0 +1,123 @@
+body .Form {
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	column-gap: 2%;
+
+	&_type_main {
+		flex-wrap: wrap;
+		column-gap: 5%;
+	}
+
+	&-Wrapper {
+		position: relative;
+		margin-top: 2%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		column-gap: 5%;
+
+		&_type_main {
+			column-gap: 6.5%;
+		}
+
+		&_type_end {
+			margin-top: 7.1%;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		&_type_mainEnd {
+			margin-top: 13.2%;
+		}
+
+		&_type_entity {
+			flex-shrink: 0;
+		}
+	}
+
+	&-Item {
+		display: block;
+	}
+
+	&-ItemTitle {
+		display: block;
+		color: #fff;
+		font-size: var(--xl);
+	}
+
+	&-PlacesList {
+		list-style-type: none;
+		background-color: #fff;
+		color: #000;
+		font-size: var(--m);
+		width: 322px;
+		border-radius: 3px;
+		z-index: 1301;
+		padding: 10px 0 15px;
+	}
+
+	&-PlacesItem {
+		padding: 1.5px 25px;
+	}
+
+	&-Annotation {
+		width: 100%;
+		margin-top: 3.5%;
+		display: block;
+		font-size: 30px;
+		font-weight: 300;
+
+		&_type_main {
+			margin-top: 8.5%;
+			padding-left: 1%;
+		}
+	}
+
+	&-Input {
+		padding: 7px 8px 8px 15px;
+		background-color: #ffffff;
+		width: 345px;
+
+		&_type_error {
+			border-bottom: 5px solid var(--red);
+		}
+	}
+
+	&-Popover {
+		z-index: 1302;
+	}
+
+	&-ErrorInfo {
+		font-size: 20px;
+		color: var(--red);
+	}
+
+	&-Button {
+		min-width: 20px;
+		margin-top: 0;
+		border-radius: 5px;
+		font-weight: 700;
+
+		&_type_action {
+			padding: 1.4% 8.7%;
+			font-size: 24px;
+			color: var(--brown);
+			background-color: var(--yellow);
+			justify-self: flex-end;
+
+			&_type_main {
+				margin-top: 43px;
+			}
+		}
+
+		&_type_swap {
+			position: absolute;
+			z-index: 1301;
+			top: 0;
+			right: calc(50% - 20px);
+			margin-top: 15px;
+		}
+	}
+}

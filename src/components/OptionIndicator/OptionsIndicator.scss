@@ -1,0 +1,10 @@
+.OptionsIndicator {
+	display: flex;
+	align-items: center;
+	align-self: flex-end;
+	padding: 10px;
+
+	&-Icon {
+		margin-left: 10px;
+	}
+}

@@ -1,0 +1,220 @@
+body .PassengersList {
+	width: 100%;
+
+	&-Item {
+		margin-top: 42px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-Item:first-child {
+		margin-top: 0;
+	}
+
+	&-ItemHead {
+		display: flex;
+		align-items: center;
+		column-gap: 6px;
+		padding: 32px 38px 22px 15px;
+		border-bottom: 1px dashed var(--light-dark);
+		font-size: 30px;
+	}
+
+	&-RemoveBtn {
+		margin-left: auto;
+	}
+
+	&-ItemMain {
+		padding: 23px 38px 18px 37px;
+		border-bottom: 1px dashed var(--light-dark);
+	}
+
+	&-AgeSelect .MuiSelect-outlined {
+		padding: 13px 25px;
+		width: 222px;
+	}
+
+	&-ItemTypeInfo {
+		margin-top: 15px;
+	}
+
+	&-PersonNames {
+		margin-top: 44px;
+		display: flex;
+		gap: 28px;
+	}
+
+	&-PersonName {
+		margin-top: 12px;
+		display: block;
+		& .MuiOutlinedInput-input {
+			padding: 13px 25px;
+			width: 226px;
+		}
+	}
+
+	&-GenderBirthdayInfo {
+		margin-top: 48px;
+		display: flex;
+		gap: 35px;
+	}
+
+	&-GenderBirthdayWrap {
+		margin-top: 16px;
+	}
+
+	&-GenderToggle {
+		border: 1px solid var(--light-dark);
+		border-radius: 5px;
+		font-size: var(--xl);
+	}
+
+	&-GenderBtn {
+		padding: 5px 15px;
+		width: 100px;
+		height: 51px;
+
+		&_type_man {
+			border-right: 1px solid var(--light-dark);
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		&_type_woman {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&_active {
+			background-color: var(--yellow);
+		}
+	}
+
+	&-BirthdayInput {
+		margin-top: 16px;
+		display: block;
+		font-size: var(--l);
+		height: 51px;
+
+		& .MuiOutlinedInput-input {
+			padding: 13px 25px;
+			width: 191px;
+		}
+	}
+
+	&-InvalidInfo {
+		margin-top: 30px;
+
+		& .MuiFormControlLabel-label {
+			font-size: var(--m);
+		}
+	}
+
+	&-DocumentInfo {
+		display: flex;
+		align-items: center;
+		gap: 33px;
+		padding: 35px 33px 32px;
+		border-bottom: 1px dashed var(--light-dark);
+	}
+
+	&-DocSelect,
+	&-DocData {
+		display: block;
+		margin-top: 11px;
+		width: 208px;
+		height: 51px;
+
+		&_type_certificate {
+			width: 280px;
+		}
+
+		& .MuiSelect-outlined,
+		.MuiOutlinedInput-input {
+			padding: 13px 18px;
+		}
+	}
+
+	&-DocData {
+		font-size: var(--l);
+		letter-spacing: 7px;
+	}
+
+	&-ItemFooter {
+		padding: 32px 35px 28px 15px;
+		text-align: end;
+		min-height: 50px;
+		font-size: var(--m);
+		color: var(--brown);
+
+		&_with_error {
+			background-color: #ff3d0061;
+			text-align: left;
+		}
+
+		&_valid {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #b2f6a1;
+		}
+	}
+
+	&-Success {
+		display: flex;
+		align-items: center;
+		column-gap: 15px;
+	}
+
+	&-SuccessText {
+		font-size: var(--m);
+		color: var(--white);
+	}
+
+	&-ErrorInfo {
+		display: flex;
+		column-gap: 15px;
+	}
+
+	&-ErrorText,
+	&-ExampleText {
+		display: block;
+	}
+
+	&-BtnNextItem {
+		color: #000;
+		border-color: #000;
+		padding: 4px 18px;
+	}
+
+	&-AddPass {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 42px;
+		padding: 22px 45px 33px 23px;
+		border: 1px solid var(--dark-gray);
+	}
+
+	&-AddPassAnno {
+		font-size: var(--xl);
+	}
+
+	&-AddPassBtn {
+		color: var(--yellow);
+		font-size: var(--xl);
+	}
+
+	&-Action {
+		margin-top: 45px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&-ActionBtn {
+		background-color: var(--yellow);
+
+		&_disabled {
+			background-color: var(--light-dark);
+			color: var(--white);
+		}
+	}
+}
