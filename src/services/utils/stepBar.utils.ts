@@ -1,14 +1,5 @@
 const errorMessage = 'Ошибка наименования пути';
 
-const countsByPath = {
-	zhd: 1,
-	directions: 1,
-	seats: 1,
-	passengers: 2,
-	payment: 3,
-	confirm: 4,
-};
-
 export default function getActiveBarsCount(pathname: string): number {
 	let value = 1;
 
