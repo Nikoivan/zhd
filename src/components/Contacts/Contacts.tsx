@@ -1,13 +1,13 @@
 import { FC } from 'react';
 
-import * as data from '../../assets/contacts/contacts.json';
-import ContactsList from './List/Contacts-List';
-
-import './Contacts.scss';
+import contactsData from '../../assets/contacts/contacts';
 import Subscription from '../Subscription/Subscription';
+import ContactsList from './List/Contacts-List';
 import Socials from '../Socials/Socials';
 
-const { contactsList, socialNetworks } = data.contacts;
+import './Contacts.scss';
+
+const { contactsList, socialNetworks } = contactsData;
 
 type ContactsProps = {
 	className?: string | null;

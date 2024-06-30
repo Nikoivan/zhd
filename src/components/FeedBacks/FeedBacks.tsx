@@ -3,11 +3,9 @@ import { cn } from '@bem-react/classname';
 
 import useResize from '../../hooks/useResize';
 import Pagination from '../Pagination/Pagination';
-import * as data from '../../assets/feedbacks/feedbacks.json';
 
 import './FeedBacks.scss';
-
-const feedbacks = data.feedbacks;
+import feedbacksData from '../../assets/feedbacks/feedbacks';
 
 const cnFeedBacks = cn('FeedBacks');
 
@@ -32,7 +30,7 @@ const FeedBacks: FC = () => {
 					className={cnFeedBacks('SliderLine')}
 					style={width ? { width: `${width * 5}px`, transform: `translatex(-${id * width}px)` } : undefined}>
 					<ul className={cnFeedBacks('List')}>
-						{feedbacks.map(({ name, content, image }, idx) => (
+						{feedbacksData.map(({ name, content, image }, idx) => (
 							<li
 								className={cnFeedBacks('Item')}
 								key={idx}>
@@ -54,7 +52,7 @@ const FeedBacks: FC = () => {
 						))}
 					</ul>
 					<ul className={cnFeedBacks('List')}>
-						{feedbacks.map(({ name, content, image }, idx) => (
+						{feedbacksData.map(({ name, content, image }, idx) => (
 							<li
 								className={cnFeedBacks('Item')}
 								key={idx}>
@@ -76,7 +74,7 @@ const FeedBacks: FC = () => {
 						))}
 					</ul>
 					<ul className={cnFeedBacks('List')}>
-						{feedbacks.map(({ name, content, image }, idx) => (
+						{feedbacksData.map(({ name, content, image }, idx) => (
 							<li
 								className={cnFeedBacks('Item')}
 								key={idx}>
@@ -98,7 +96,7 @@ const FeedBacks: FC = () => {
 						))}
 					</ul>
 					<ul className={cnFeedBacks('List')}>
-						{feedbacks.map(({ name, content, image }, idx) => (
+						{feedbacksData.map(({ name, content, image }, idx) => (
 							<li
 								className={cnFeedBacks('Item')}
 								key={idx}>
@@ -120,7 +118,7 @@ const FeedBacks: FC = () => {
 						))}
 					</ul>
 					<ul className={cnFeedBacks('List')}>
-						{feedbacks.map(({ name, content, image }, idx) => (
+						{feedbacksData.map(({ name, content, image }, idx) => (
 							<li
 								className={cnFeedBacks('Item')}
 								key={idx}>
