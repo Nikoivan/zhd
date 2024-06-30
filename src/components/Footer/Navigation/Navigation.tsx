@@ -17,7 +17,7 @@ const Navigation: FC<NavigationProps> = ({ onClick, hidden }) => (
 		<IconButton
 			className={`Navigation-HideButton${hidden ? ' Navigation-HideButton_type_hidden' : ''}`}
 			onClick={onClick}>
-			<img src='./src/assets/icons/vector.svg' />
+			<img src='./zhd/src/assets/icons/vector.svg' />
 		</IconButton>
 		<Development />
 	</div>
